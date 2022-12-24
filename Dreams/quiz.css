@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Space Mono, sans-serif;
+    background: linear-gradient(215deg, rgba(236, 248, 3, 0.615),rgba(168, 12, 225, 0.633)),url(back0.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#quiz-container  {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+img{
+    width: 5.5rem;
+    height: 5.2rem;
+    border-radius: 50%;
+}
+.img{
+    position: fixed;
+}
+#title{
+    text-align: center;
+    padding: 0.1rem 0;
+    color: black;
+    background: rgba(255, 217, 0, 0.804);
+    letter-spacing: 3px;
+    font-family: Space Mono, 'Times New Roman', Times, serif;
+}
+.questions{
+    margin: 0rem auto;
+    width: 70vw;
+    padding: 0rem;
+    cursor: default;
+    border-radius: 1rem;
+}
+#question{
+    margin-bottom: 0rem;
+}
+.option{
+
+    margin: 0.3rem auto;
+    width: 90vw;
+    text-align: center;
+    font-size: 0.7rem;
+    border-bottom: solid 0.1rem rgb(75, 75, 75);
+    width: 12rem;
+    background: rgba(255, 255, 255, 0.773);
+    border-radius: 1rem;
+}
+.option:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+ul{
+    position: relative;
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+#answer{
+    margin-top: 2.5rem;
+}
+#stat{
+    margin-top: 1.5rem;
+    color: rgb(6,17,168);
+}
+.next {
+    font-family: Space Mono;
+    letter-spacing: 3px;
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    color: black;
+    background: gold;
+}
+.next:active{
+    background: lavender;
+}
+#scoreboard,#answerBank{
+    width: 10rem;
+    background: rgba(230,230,250,0.77);
+    padding: 0.2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    display: none;
+}
+#score-title{
+    margin: 0.2rem 0;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 2rem;
+}
+#answerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#answers{
+    margin-top: 1rem;
+}
+
+#div6 {
+    margin: auto;
+    width: 50%;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color: rgb(255, 255, 255); left:0px; top:0px;}
+    16.65%   {background-color:red; left:0px; top:0px;}
+    22.2%  {background-color:Orange; left:0px; top:0px;}
+    27.75%  {background-color:yellow; left:200px; top:0px;}
+    33.3%  {background-color:green; left:200px; top:200px;}
+    49.95%  {background-color:lightblue; left:200px; top:200px;}
+    55.5%  {background-color:mediumblue; left:200px; top:200px;}
+    61.05%  {background-color:Magenta; left:200px; top:200px;}
+    66.6%  {background-color:purple; left:0px; top:200px;}
+    83.25%  {background-color:limegreen; left:0px; top:200px;}
+    88.88%  {background-color:rgb(106, 57, 57); left:0px; top:200px;}
+    94.35%  {background-color:grey; left:0px; top:200px;}
+    100%  {background-color:black; left:0px; top:200px;}
+}
+
+@media screen and (min-width: 601px) {
+    * {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    * {
+      font-size: 1.2rem;
+    }
+  }
