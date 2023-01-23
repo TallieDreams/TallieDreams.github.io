@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body{
@@ -12,6 +15,36 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.swal-modal {
+    background: linear-gradient(215deg, rgba(255, 255, 255),rgba(168, 12, 225));
+}
+.swal-text {
+    font-family: Space Mono;
+    padding: 17px;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+  }
+.swal-button {
+    font-family: Space Mono;
+    letter-spacing: 3px;
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    color: black;
+    background: gold;
+}
+
 #quiz-container  {
     text-align: center;
     padding: 1rem 0;
@@ -44,7 +77,6 @@ img{
     margin-bottom: 0rem;
 }
 .option{
-
     margin: 0.3rem auto;
     width: 90vw;
     text-align: center;
@@ -76,6 +108,7 @@ span{
     color: rgb(6,17,168);
 }
 .next {
+    visibility: hidden;
     font-family: Space Mono;
     letter-spacing: 3px;
     padding: 0.2rem 1.5rem;
@@ -88,6 +121,7 @@ span{
 .next:active{
     background: lavender;
 }
+
 #scoreboard,#answerBank{
     width: 10rem;
     background: rgba(230,230,250,0.77);

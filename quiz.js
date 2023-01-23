@@ -6,12 +6,12 @@ var questionBank= [
         answer : 'subconscious'
     },
     {
-        question : 'Shamate',
+        question : 'When I\'m lonely I dream of you',
         option : ['consciousness','subconscious'],
         answer : 'consciousness'
     },
     {
-        question : 'When I\'m lonely I dream of you',
+        question : 'Shamate',
         option : ['consciousness','subconscious'],
         answer : 'consciousness'
     },
@@ -98,7 +98,7 @@ function calcScore(e){
     else{
         document.getElementById(e.id).style.background= 'black';
     }
-    setTimeout(nextQuestion,300);
+    setTimeout(nextQuestion,300);    
 }
 
 //function to display next question
@@ -112,6 +112,14 @@ function nextQuestion(){
         points.innerHTML= score+ '/'+ questionBank.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block'
+        setTimeout(myGreeting, 500);
+        function myGreeting() {
+            if (score == questionBank.length) {
+                swal("WoW!", "Great job! Everything is right!");
+            } else {
+                                      
+            }
+        }
     }
 }
 
@@ -139,3 +147,12 @@ function checkAnswer(){
 
 
 displayQuestion();
+
+
+
+//function preback() {
+ //   window.history.back();
+//}
+//setTimeout(preback, 0);
+//window.onunload=function(){null};
+

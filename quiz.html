@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space Mono">
-    <title>Dreams&Dreams</title>
-
-    <!-- css file link -->
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
     <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dreams&Dreams</title>
 </head>
 <body>
-    <h1 id="title">Dreams&Dreams album</h1>
-
+    <h1 id="title">Dreams&Dreams</h1>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- quiz-container -->
     <div id="quiz-container">
         <!-- question container -->
@@ -34,23 +34,24 @@
     <!-- scoreboard section -->
     <div id="scoreboard">
         <div id="div6"></div>
-        <!--<img src="logo.jpeg" alt="">-->
         <h2 id="score-title">Your Score</h2>
         <h2 id="score"></h2>
-        <!--<button type="button" id="score-btn" onclick="backToQuiz()"> </button>
-        <button type="button" id="check-answer" onclick="checkAnswer()"> </button>-->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
     </div>
 
     <!-- answers section -->
     <div id="answerBank">
 
-        <ol type="1" id="answers">
+        <ul type="1" id="answers">
 
-        </ol>
+        </ul>
         <button type="button" id="score-btn" onclick="backToQuiz()"> </button>
     </div>
 
     <!-- javascript file source -->
     <script src="quiz.js"></script>
+
 </body>
 </html>

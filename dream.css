@@ -1,38 +1,41 @@
-body {
-  font-family: Space Mono, sans-serif;
-  letter-spacing: 3px;
-    background: linear-gradient(215deg, rgba(236, 248, 3, 0.615),rgba(168, 12, 225, 0.633)),url(back0.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+*{
+  font-family: Space Mono, 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header {
-      text-align: center;
-      margin: auto;
-      padding: 70px 0;
-      color: black;
+  font-family: Space Mono;
+  text-align: center;
+  margin: auto;
+  padding: 70px 0;
+  color: black;
 }
 
-*{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
+body {
+  background: linear-gradient(215deg, rgba(236, 248, 3, 0.615),rgba(168, 12, 225, 0.633)),url(back0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .buttons{
     text-align: center;
 }
+
 button{
-  font-family: Space Mono;
   letter-spacing: 3px;
-    padding: 0.2rem 1.5rem;
-    border: none;
-    outline: none;
-    border-radius: 1.5rem;
-    color: black;
-    background: gold;
+  padding: 0.2rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  color: black;
+  background: gold;
 }
 button:active{
     background: lavender;
