@@ -115,7 +115,7 @@ function nextQuestion(){
         setTimeout(myGreeting, 500);
         function myGreeting() {
             if (score == questionBank.length) {
-                swal("WoW!", "Great job! Everything is right!");
+                swal("WoW!", "Great job! Everything is right! Post #WinWILIDOY, so I could see you!<3");
             } else {
                                       
             }
